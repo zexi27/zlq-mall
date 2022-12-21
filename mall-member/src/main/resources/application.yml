@@ -1,0 +1,31 @@
+# \u6570\u636E\u5E93\u7684\u8FDE\u63A5\u65B0
+spring:
+  datasource:
+    username: root
+    password: zaxscdvf
+    url: jdbc:mysql://localhost:3306/mall-ums
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+#    sentinel:
+#      transport:
+#        client-ip: localhost
+#        port: 8719
+#        dashboard: localhost:8080
+  application:
+    name: mall-member
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**/*.xml
+  global-config:
+    db-config:
+      id-type: auto # \u4E3B\u952E\u81EA\u589E
+server:
+  port: 20300
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

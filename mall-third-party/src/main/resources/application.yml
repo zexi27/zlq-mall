@@ -1,0 +1,21 @@
+# \u6570\u636E\u5E93\u7684\u8FDE\u63A5\u65B0
+spring:
+  datasource:
+    username: root
+    password: zaxscdvf
+    url: jdbc:mysql://localhost:3306/mall-pms
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+    alicloud:
+      access-key: "LTAI5tL12dtSKbYrqcyL6poy"
+      secret-key: "XifYvYNMhI8zRg1THdEkDsBgT94lA8"
+      oss:
+        endpoint: "oss-cn-beijing.aliyuncs.com"
+        bucketName: "figure-bed-liqun"
+    application:
+      name: mall-third
+server:
+  port: 8090
