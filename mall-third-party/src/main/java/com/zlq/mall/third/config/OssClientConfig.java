@@ -23,13 +23,6 @@ public class OssClientConfig {
 
     @Value("${spring.cloud.alicloud.secret-key}")
     private String accessKeySecret;
-    //        String endpoint = "oss-cn-beijing.aliyuncs.com";
-    //        // 阿里云账号AccessKey拥有所有API的访问权限，风险很高。强烈建议您创建并使用RAM用户进行API访问或日常运维，请登录RAM控制台创建RAM用户。
-//        String accessKeyId = "LTAI5tL12dtSKbYrqcyL6poy";
-//        String accessKeySecret = "XifYvYNMhI8zRg1THdEkDsBgT94lA8";
-//
-//        // 创建OSSClient实例。
-//        OSS ossClient = new OSSClientBuilder().build(endpoint, accessKeyId, accessKe
 
     @Bean
     public OSSClient getOssClient(){

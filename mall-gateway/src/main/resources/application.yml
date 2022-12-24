@@ -26,8 +26,8 @@ spring:
             - Path=/app/third/**
           filters:
             - RewritePath=/app/third/(?<segment>/?.*), /$\{segment}
-        - id: memeber_route
-          uri: lb://mall-memeber
+        - id: member_route
+          uri: lb://mall-member
           predicates:
             - Path=/app/member/**
           filters:

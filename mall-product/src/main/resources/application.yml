@@ -9,11 +9,6 @@ spring:
     nacos:
       discovery:
         server-addr: localhost:8848
-    alicloud:
-      access-key: LTAI5tL12dtSKbYrqcyL6poy
-      secret-key: XifYvYNMhI8zRg1THdEkDsBgT94lA8
-      oss:
-        endpoint: oss-cn-beijing.aliyuncs.com
     sentinel:
       transport:
         client-ip: localhost
